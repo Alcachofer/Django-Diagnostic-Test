@@ -1,0 +1,97 @@
+<html>
+
+
+    <head>
+
+        <title> Resultados </title>
+
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #d6d6f5;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: #003300;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: #ffffff;
+            }
+
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+
+        </style>
+
+    </head>
+
+    <body bgcolor="#ffffb3">
+
+        <ul>
+            <li style="float:right"><a class="active" href="{% url 'consignas' %}">Consignas</a></li>
+        </ul>
+
+
+        <h2> Candidatos:</h2>
+
+        <table>
+            <tr>
+                <th>Apellido</th>
+                <th>Nombre</th>
+                <th>Cantidad de votos</th>
+            </tr>
+            {% for candidato in todos_los_candidatos %}
+            <tr>
+                <td>{{candidato.apellido}}</td>
+                <td>{{candidato.nombre}}</td>
+                <td>{{todos_los_candidatos.cantidad_de_votos}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <!-- Codigo para mostrar nombre y apellido de todos los candidatos -->
+
+        {% for candidato in todos_los_candidatos %}
+
+        {{todos_los_candidatos.apellido}}{{todos_los_candidatos.nombre}}
+
+        {% endfor %}
+
+        <h2>Distritos:</h2>
+
+        <!-- Codigo para mostrar todos los distritos, y al hacer click en uno que muestre los detalles del mismo -->
+
+        {% for distrito in todos_los_distritos %}
+
+        <a href="{% url 'distrital' distrito.id %}"> {{distrito}}</a>
+
+        {% endfor %}
+
+    </body>
+
+</html>

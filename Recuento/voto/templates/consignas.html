@@ -1,0 +1,96 @@
+<html>
+
+    <head>
+
+        <title> Consignas </title>
+
+        <style>
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #ffffff;
+            }
+
+        </style>
+
+    </head>
+
+
+    <body bgcolor="ffffb3">
+
+        <ul>
+            <li style="float:right"><a class="active" href="{% url 'resultado_global' %}">Resultados</a></li>
+        </ul>
+
+        <p><big><u> Objetivos a realizar: </u></big></p>
+
+        <span> Base de Datos :</span>
+
+        <p> Los siguientes puntos seran los minimos para dar como aprobada la parte de Base De Datos </p>
+
+        <ul>
+            <li><a><i><u>Completar los modelos:</u></i> Agregar los campos que se consideran necesarios para el funcionamiento
+            de la votacion.</a></li>
+            <li><a><i><u>Funciones:</u></i>: Crear una funcion para cada modelo en donde se mostraran todos los componentes del mismo desde el admin</a></li>
+            <li><a><i><u>Register:</u></i>: Registrar todos los modelos en el admin de django</a></li>
+            <li><a> <i><u>Explicacion:</u></i> Realizar una breve descripcion en el models.py donde se vera reflejado el motivo por el cual se eligio agregar o quitar atributos</a></li>
+        </ul>
+
+        <p> Consejo: Se recomienda leer todas las consignas antes de completar los modelos. </p>
+
+        <p> Estos objetivos no son obligatorios pero sirven para demostrar que sabes manejar correctamente una Base de Datos </p>
+
+        <ul>
+            <li><a><i><u>Modelos Utiles:</u></i> Si prestas atencion en el models, podras encontrar 4 modelos, queda en ti si vas a usar todos o si vas a usar solo los "necesarios". Nota: En caso de usar todos, completa los 4 modelos de forma tal que sean utilizables. </a></li>
+        </ul>
+
+        <hr>
+
+        <span> Programacion :</span>
+
+        <p> Puntos obligatorios del area de Programacion: </p>
+
+        <ul>
+            <li><a><i><u>Crear Superuser:</u></i> Crear un superuser con el nombre "admin" contraseña "admin1234". <b>Punto clave</b></a></li>
+            <li><a><i><u>Register:</u></i> Registrar todos los modelos en el admin de django</a></li>
+            <li><a><i><u>Nombre:</u></i> Explicar el motivo por el cual en global.html se muestra el nombre del distrito y no la cantidad de votantes. </a></li>
+            <li><a><i><u>Votar:</u></i> Poder realizar un voto mediante el admin de django especificando candidato y si el voto es valido o no. </a></li>
+            <li><a><i><u>Orden Alfabetico:</u></i> Al momento de mostrar los candidatos se necesita mostrar los mismos por apellido de forma descendiente segun exigen las reglas de la votacion</a></li>
+            <li><a><i><u>Datos del distrito:</u></i> Crear la funcion que permita observar todos los datos del distrito seleccionado en el template distrital.html, si no sabes como hacer esto busca en el diccionario</a></li>
+        </ul>
+
+        <hr>
+
+        <span> Diseño :</span>
+
+        <p> Opcional pero valioso </p>
+
+        <p> Todos sabemos que aunque un proyecto este muy bien hecho en cuanto a la programacion o la base de datos, la parte estetica cumple un rol muy importante, por lo que en esta seccion vas a demostrar que tanto podes mejorar esta pagina web.</p>
+
+        <p> Consejo: No inicies con esta parte antes de poder votar desde el admin y cumplir con todos los puntos obligatorios del area de Programacion</p>
+
+        <ul>
+            <li><a><i><u>Colores:</u></i> Puedes cambiar todos los colores de la pagina .</a></li>
+            <li><a><i><u>Diseño:</u></i> Todos los componentes pueden ser modificados como las navbar, span, incluidos los de esta pagina. Es obligatorio dejar funcional todos los componentes de la pagina tal como estaban la primera vez que se ejecuto el proyecto</a></li>
+        </ul>
+
+        <p> Avanzado pero no Imposible </p>
+
+        <p> Si prestaste atencion en la parte de distritos y global comparten la misma estructura de navbar y de background, una de las grandes ventajas de django es la de poder realizar esto en archivo e importarlo en los que deseamos aplicarlo, por lo que la idea en esta parte es la de realizar un archivo donde se encontrara toda la parte estetica para asi no tener codigo repetido</p>
+
+        <hr>
+
+        <span> Aclaracion: </span>
+
+        <p> En caso de no poder avanzar en vez de resignarse intetna por ultima vez, si no completas la tarea deja por escrito que tenias que hacer y cual era tu idea para realizarlo ya sea en el views.py, models.py o template donde estes trabajando.</p>
+
+        <p> Al momento de realizar el siguiente diagnostico estan permitidas las preguntas y el uso de internet, se recomienda hacer un buen uso del tiempo, si tu fuerte es lo estetico esforzate en terminar la parte central del proyecto y luego pasar a tu fuerte. Al finalizar notifica a quien este a cargo de la correcion del diagnostico.</p>
+
+        <p> Por ultimo no consideres este diagnostico como el cupable de tu falta de conocimiento, ya con realizarlo estas demostrando  interes en Django, sin importar tu objetivo, decidiste dejar de lado otras actividades con el fin de poder aprender mas y ayudar a tus compañeros.</p>
+
+    </body>
+
+</html>

@@ -1,0 +1,54 @@
+<html>
+
+
+    <head>
+
+
+        <title> Distrito {{distrito}}</title>
+
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #d6d6f5;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: #003300;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: #ffffff;
+            }
+        </style>
+
+
+    </head>
+
+    <body bgcolor="#ffffb3">
+
+        <ul>
+            <li style="float:right"><a class="active" href="{% url 'consignas' %}">Consignas</a></li>
+        </ul>
+
+    </body>
+
+
+</html>
+
+<h1>Distrito: {{distrito}}</h1>
+<ul>
+<li>Tamaño del padrón: {{distrito.cantidad_votantes}}</li>
+<li>Porcentaje de votantes: {{porcentaje_votantes}} </li>
+<li>Total de votos del distrito: {{total_votantes}} </li>
+</ul>
